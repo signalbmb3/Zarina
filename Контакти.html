@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Контакти</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css_catalog.css">
+    
+    <style>
+        /* Стили за формуляра за поръчка */
+        .form-container {
+	gap:-50%;
+      max-width: 500px;
+      margin: 0 auto;
+      font-family: monospace;
+	font-weight:500;
+	font-size:19px;
+	font-style:italic;
+	float: right;
+	position:relative;
+	height: auto;
+    float: right;
+    left: 30%;
+    position: relative;
+    display: grid;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      font-family:monospace;
+      font-style:italic;
+      background-color: white;
+      color: black;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    input[type="submit"]:hover {
+      background-color: black;
+      color:white;
+    }
+	h2{
+	   color:white;
+     line-height: 0.5;
+	}
+	label{
+		color:white;
+		}
+   .h2{
+    color:white;
+    font-family: monospace;
+    font-size: 900;
+    font-style: italic;
+    font-size: 33px;
+    line-height: 0%;
+    
+   }
+   .h1{
+    font-size:21px;
+    font-style:italic;
+    font-weight: 300;
+   }
+    </style>
+</head>
+<body >
+  <div style="background-image: url('Изображения за първа страница/bg_ci.png'); height:960px; width:100%; top:15%; position:absolute; background-size: cover; background-repeat: no-repeat; display: grid;">
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="index.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+
+    <div class="content"  style="height:auto; display: grid;  flex: 1;  padding-top:0%;  ">
+      <div style="height:auto; display: grid;  flex: 1;  padding-top:0%;  "> <h2 align="center" class="h2">Контакти</h2> <br><h2 align="center" class="h1">Адрес:Хасково ул Банска 70 Телефон:+3593456789</h2></div>
+       
+            <!-- Формуляр за поръчка -->
+          
+               
+            <div class="form-container">
+              <h2>Оставете вашето мнение</h2>
+              
+              <form action="forma.php" method="POST">
+                  <label for="name">Име:</label><br>
+                  <input type="text" id="name" name="name" required><br>
+              
+         
+
+                  <label for="phone">Тема:</label><br>
+                  <input type="text" id="phone" name="phone" required><br>
+              
+                  <label for="email">Имейл:</label><br>
+                  <input type="text" id="email" name="email" required><br>
+             
+              
+                  <label for="comments">Допълнителен коментар:</label><br>
+                  <textarea id="comments" name="comments" rows="4"></textarea><br>
+              
+                  <p align="center"><input type="submit" value="Изпрати" ></p>
+                </form>
+                <div style="z-index:12;  width:20%;  position:relative;  top:5%; float:right"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11872.186644334546!2d25.556254399999996!3d41.9348487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbg!4v1711558364402!5m2!1sen!2sbg" ; width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              </div>
+
+              <div class="footer" >
+                <div class="contact-info">
+                    <p>Свържете се с нас:</p>
+                    <p>Имейл: zarina@abv.bg</p>
+                    <p>Телефон: +3593456789</p>
+                </div>
+              
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="links">
+                    <a href="За нас.html">За нас</a>
+                    <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+                    <a href="Галерия.html">Галерия</a>
+                </div>
+              
+              </div>
+              </div>
+              <!--end of footer-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_catalog.css">
+
+<script>
+    function toggleZoom(image) {
+            image.classList.toggle('zoomed');
+        }
+ 
+function toggleZoom(image) {
+    if (image.classList.contains('zoomed')) {
+        image.classList.remove('zoomed');
+    } else {
+        image.classList.add('zoomed');
+    }
+}
+//kotva
+function scrollToContent() {
+    var contentSection = document.getElementById('content-section');
+    contentSection.scrollIntoView({ behavior: 'smooth' });
+  }
+    </script>
+    <title>За фирмата</title>
+</head>
+<body>
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="index.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+<div class="content" id="content-section">
+    <div class="text_catalog"><span>Графична информация за продажбите на фирамта за последните години<br></span></h1><br></div>
+    <!--Catalog-->
+    <div class="best_sellesrs_container">
+        <div class="image-catalog_">
+        <div class="best_sellers"><hr><p align="center"><img id="img1"  src="Изображения за първа страница/graphic1.png" width="50%" height="50%" ></div>
+        <div class="best_sellers"><hr><p align="center"><img id="img2"  src="Изображения за първа страница/graphic2.png" width="50%" height="50%"></div>
+        <div class="best_sellers"><hr><p align="center"><img id="img3"  src="Изображения за първа страница/graphic3.png" width="50%" height="50%"></div>
+    </div>
+    
+    </div>
+       <!--end of catalaog-->
+       <!--footer-->
+       <div class="footer" >
+        <div class="contact-info">
+            <p>Свържете се с нас:</p>
+            <p>Имейл: zarina@abv.bg</p>
+            <p>Телефон: +3593456789</p>
+        </div>
+      
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="links">
+            <a href="За нас.html">За нас</a>
+            <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+            <a href="Галерия.html">Галерия</a>
+        </div>
+        <button class="scroll-btn" onclick="scrollToContent()">Начало</button>
+      </div>
+      </div>
+      <!--end of footer-->
+</div>

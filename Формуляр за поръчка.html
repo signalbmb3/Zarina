@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Формуляр за поръчка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css_catalog.css">
+    <script>
+     function validateForm() {
+    var name = document.getElementById('name').value;
+    var address = document.getElementById('address').value;
+    var city = document.getElementById('city').value;
+    var country = document.getElementById('country').value;
+    var email = document.getElementById('email').value;
+    var product = document.getElementById('product').value;
+    var quantity = document.getElementById('quantity').value;
+
+    if (name === "" || address === "" || city === ""|| country === ""|| email === ""|| product === ""|| quantity === "") {
+        alert("Всички полета трябва да бъдат попълнени!");
+        return false;
+    }
+
+    return true;
+}
+  </script>
+    <style>
+        /* Стили за формуляра за поръчка */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            font-family: monospace;
+            font-weight: 500;
+            font-size: 19px;
+            font-style: italic;
+            float: right;
+            position: relative;
+            height: auto;
+            float: right;
+            left: 30%;
+            position: relative;
+            display: grid;
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            font-family: monospace;
+            font-style: italic;
+            background-color: white;
+            color: black;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: black;
+            color: white;
+        }
+        input[type="reset"] {
+            font-family: monospace;
+            font-style: italic;
+            background-color: white;
+            color: black;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="reset"]:hover {
+            background-color: black;
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        label {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+<div style="background-image: url('Изображения за първа страница/bg_ci.png'); height:960px; width:100%; top:15%; position:absolute; background-size: cover; background-repeat: no-repeat; display: grid;">
+<!--hover-->
+<div class="header">
+    <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+    <ul class="nav">
+      
+      <li><a href="index.html">За нас</a></li>
+      <li><a href="За фирмата.html">За фирмата</a></li>
+      <li>
+        <a href="Каталог.html">Каталог</a>
+        <div class="dropdown">
+          <ul>
+            <li><a href="Бални рокли.html">Бални рокли</a></li>
+            <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+            <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="Промоции.html">Промоция</a></li>
+      <li><a href="Галерия.html">Галерия</a></li>
+      <li><a href="Контакти.html">Контакти</a></li>
+   
+      <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+    </ul>
+  </div>
+<!--end of hover-->
+
+    <div class="content"  style="height:auto; display: grid; flex: 1;  padding-top:5%;  ">
+        
+            <!-- Формуляр за поръчка -->
+            <div class="form-container">
+                <h2>Формуляр за поръчка</h2>
+                <form id="orderForm" onsubmit="return validateForm()">
+                    <label for="name">Име:</label><br>
+                    <input type="text" id="name" name="name" ><br>
+                
+                    <label for="address">Адрес:</label><br>
+                    <input type="text" id="address" name="address" ><br>
+                
+                    <label for="city">Град:</label><br>
+                    <input type="text" id="city" name="city" ><br>
+                
+                    <label for="country">Държава:</label><br>
+                    <input type="text" id="country" name="country" ><br>
+                
+                    <label for="phone">Телефон:</label><br>
+                    <input type="text" id="phone" name="phone" ><br>
+                
+                    <label for="email">Имейл:</label><br>
+                    <input type="text" id="email" name="email" ><br>
+                
+                    <label for="product">Продукт/Подръжка:</label><br>
+                    <input type="text" id="product" name="product" ><br>
+                
+                    <label for="quantity">Количество:</label><br>
+                    <input type="number" id="quantity" name="quantity" ><br>
+                
+                    <label for="comments">Допълнителен коментар:</label><br>
+                    <textarea id="comments" name="comments" rows="4"></textarea><br>
+                
+                    <input type="submit" value="Предаване на формуляр">	
+                    <input type="reset" value="Изчисти">
+                </form>
+              </div>
+        <div class="footer" >
+  <div class="contact-info">
+      <p>Свържете се с нас:</p>
+      <p>Имейл: zarina@abv.bg</p>
+      <p>Телефон: +3593456789</p>
+  </div>
+
+  <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="links">
+      <a href="За нас.html">За нас</a>
+      <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+      <a href="Галерия.html">Галерия</a>
+  </div>
+
+</div>
+</div>
+<!--end of footer-->
+    </div>
+
+</div>
+</body>
+</html>
+
+

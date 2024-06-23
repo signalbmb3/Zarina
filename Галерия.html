@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="css_catalog.css">
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        
+      
+    </style>
+    <title>Галерия</title>
+</head>
+
+<body>
+  
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="index.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+<div class="grid_one">
+    <div class="container_image" > <img src="Изображения за първа страница/Събитие.jpg" width="100%" height="auto">
+        <br>
+        Събиране на персонал
+       </div>
+
+   <div class="container_image"> <img src="Изображения за първа страница/Zarina.jpg" width="80%" height="auto">
+    <br>
+    Зарина-оснавателка
+ </div>
+
+
+    <div class="container_image" > <img src="Изображения за първа страница/Персонал.png" width="100%" height="auto">
+        <br>
+        Снимка на персонала
+       </div>
+ </div>
+
+ <div class="grid_two">
+ <div class="container_image"><img  src="Изображения за първа страница/cene-Magazine-Kent-Fashion-Konstanty-Designer-Feature-Edition-30-November-December-2023-13.jpg" width="55%" height="auto" > <br>Модно шоу</div>
+ <div class="container_image"><img  src="Изображения за първа страница/certainly-heres-a-visual-description-of-how-a-dress-shop-might-lookas-you-approach-the-dress-b-832253496.jpeg" width="70%" height="auto" > <br>Магазинът</div>
+ <div class="container_image"><img  src="Изображения за първа страница/84d1e271f730b3e53ebabdf8df23df35.jpg" width="65%" height="auto" > <br>Ателие</div>
+ 
+</div>
+    
+    <!--footer-->
+    <div class="footer" >
+      <div class="contact-info">
+          <p>Свържете се с нас:</p>
+          <p>Имейл: zarina@abv.bg</p>
+          <p>Телефон: +3593456789</p>
+      </div>
+    
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="links">
+          <a href="За нас.html">За нас</a>
+          <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+          <a href="Галерия.html">Галерия</a>
+      </div>
+    
+    </div>
+    </div>
+    <!--end of footer-->
+      <script>
+        // effect for javascript
+        document.querySelectorAll('.container_image img').forEach(image => {
+            image.addEventListener('mouseenter', () => {
+                image.style.transform = 'scale(1.2)';
+                image.style.transition = 'transform 0.3s ease';
+            });
+            image.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';
+                image.style.transition = 'transform 0.3s ease';
+            });
+        });
+    </script>
+</body>
+</html>

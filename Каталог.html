@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_catalog.css">
+<title>Каталог</title>
+<script>
+    function toggleZoom(image) {
+            image.classList.toggle('zoomed');
+        }
+  function setNewImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/1.2.png";
+
+}
+function setOldImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/1.png";
+}
+function setNewImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/2.2.png";
+}
+function setOldImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/2.png";
+}
+function setNewImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/3.2.png";
+}
+function setOldImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/3.png";
+}
+function setNewImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/4.2.jpg";
+}
+function setOldImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/4.png";
+}
+function setNewImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/5.2.png";
+}
+function setOldImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/5.png";
+}
+function setNewImage6()
+{
+document.getElementById("img6").src="Изображения за първа страница/6.2.png";
+}
+function setOldImage6()
+{
+document.getElementById("img6").src="Изображения за първа страница/6.png";
+}
+function setNewImage7()
+{
+document.getElementById("img7").src="Изображения за първа страница/7.2.png";
+}
+function setOldImage7()
+{
+document.getElementById("img7").src="Изображения за първа страница/7.png";
+}
+function setNewImage8()
+{
+document.getElementById("img8").src="Изображения за първа страница/8.2.png";
+}
+function setOldImage8()
+{
+document.getElementById("img8").src="Изображения за първа страница/8.png";
+}
+function setNewImage9()
+{
+document.getElementById("img9").src="Изображения за първа страница/9.2.png";
+}
+function setOldImage9()
+{
+document.getElementById("img9").src="Изображения за първа страница/9.png";
+}
+function toggleZoom(image) {
+    if (image.classList.contains('zoomed')) {
+        image.classList.remove('zoomed');
+    } else {
+        image.classList.add('zoomed');
+    }
+}
+//kotva
+function scrollToContent() {
+    var contentSection = document.getElementById('content-section');
+    contentSection.scrollIntoView({ behavior: 'smooth' });
+  }
+    </script>
+</head>
+<body>
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="index.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+<div class="content" id="content-section">
+    <div class="text_catalog"><span>ВСИЧКИ</span><br><br><br>От зашеметяващи абитуриентски рокли до луксозни вечерни рокли, украсени с причудливи детайли, тук можете да разгледате цялата ни колекция от налични официални рокли.<br> Тук, в ZARINA, ние сме специализирани в рокли за романтичните по душа, с уникални и стилни официални рокли за всички поводи, включително<br> рокли за вечерни събития, абитуриентски балове и завръщане у дома, празнични парти рокли, както и красиво изработени сватбени рокли и рокли за шаферки.<br> Всички наши рокли съчетават очарованието на ръчно изработени детайли и превъзходно качество с несравнимо усещане за стил, предлагайки наистина изживяване.</h1></div>
+    <!--Catalog-->
+    <div class="best_sellesrs_container">
+        <div class="image-catalog">
+        <div class="best_sellers"><p align="center"><img id="img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" onclick="toggleZoom(this)" src="Изображения за първа страница/1.png" width="90%" height="90%" ></p><b>Зарина</b><br>Венера Прослава<br>A1635<br>1400лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" onclick="toggleZoom(this)" src="Изображения за първа страница/2.png" width="90%" height="90%"></p><b>Зарина</b><br>Атина Елегантност<br>A1835<br>1200лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" onclick="toggleZoom(this)" src="Изображения за първа страница/3.png" width="90%" height="90%"></p><b>Зарина</b><br>Хера Благодат<br>A1935<br>1000лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img4" onmouseover="setNewImage4()" onmouseout="setOldImage4()" onclick="toggleZoom(this)" src="Изображения за първа страница/4.png" width="90%" height="90%"></p><b>Зарина</b><br>Артемида Освежаване<br>A1635<br>1100лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img5" onmouseover="setNewImage5()" onmouseout="setOldImage5()" onclick="toggleZoom(this)" src="Изображения за първа страница/5.png" width="90%" height="90%"></p><b>Зарина</b><br>Деметра Разцъфтяване<br>A1085<br>1300лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img6" onmouseover="setNewImage6()" onmouseout="setOldImage6()" onclick="toggleZoom(this)" src="Изображения за първа страница/6.png" width="90%" height="90%"></p><b>Зарина</b><br>Персефона Омагьосване<br>A3237<br>1400лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img7" onmouseover="setNewImage7()" onmouseout="setOldImage7()" onclick="toggleZoom(this)" src="Изображения за първа страница/7.png" width="90%" height="90%"></p><b>Зарина</b><br>Хестия Спокойствие<br>A5035<br>1500лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img8" onmouseover="setNewImage8()" onmouseout="setOldImage8()" onclick="toggleZoom(this)" src="Изображения за първа страница/8.png" width="90%" height="90%"></p><b>Зарина</b><br>Гае Хармония<br>A1835<br>1100лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img9" onmouseover="setNewImage9()" onmouseout="setOldImage9()" onclick="toggleZoom(this)" src="Изображения за първа страница/9.png" width="90%" height="90%"></p><b>Зарина</b><br>Никс Нощна Естетика<br>A1032<br>1300лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+    </div>
+    
+    </div>
+       <!--end of catalaog-->
+       <!--footer-->
+       <div class="footer" >
+        <div class="contact-info">
+            <p>Свържете се с нас:</p>
+            <p>Имейл: zarina@abv.bg</p>
+            <p>Телефон: +3593456789</p>
+        </div>
+      
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="links">
+            <a href="За нас.html">За нас</a>
+            <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+            <a href="Галерия.html">Галерия</a>
+        </div>
+        <button class="scroll-btn" onclick="scrollToContent()">Начало</button>
+      </div>
+      </div>
+      <!--end of footer-->
+</div>

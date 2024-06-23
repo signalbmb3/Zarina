@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css_catalog.css">
+<title>Промоция</title>
+<script>
+    function toggleZoom(image) {
+            image.classList.toggle('zoomed');
+        }
+  function setNewImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/37.1.png";
+
+}
+function setOldImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/37.png";
+}
+function setNewImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/38.1.png";
+}
+function setOldImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/38.jpg";
+}
+function setNewImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/39.1.png";
+}
+function setOldImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/39.png";
+}
+function setNewImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/40.1.png";
+}
+function setOldImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/40.png";
+}
+function setNewImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/41.1.png";
+}
+function setOldImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/41.png";
+}
+function setNewImage6()
+{
+document.getElementById("img6").src="Изображения за първа страница/42.1.jpg";
+}
+function setOldImage6()
+{
+document.getElementById("img6").src="Изображения за първа страница/42.jpg";
+}
+function setNewImage7()
+{
+document.getElementById("img7").src="Изображения за първа страница/43.1.png";
+}
+function setOldImage7()
+{
+document.getElementById("img7").src="Изображения за първа страница/43.jpg";
+}
+function setNewImage8()
+{
+document.getElementById("img8").src="Изображения за първа страница/44.1.png";
+}
+function setOldImage8()
+{
+document.getElementById("img8").src="Изображения за първа страница/44.png";
+}
+function setNewImage9()
+{
+document.getElementById("img9").src="Изображения за първа страница/45.1.png";
+}
+function setOldImage9()
+{
+document.getElementById("img9").src="Изображения за първа страница/45.png";
+}
+
+function toggleZoom(image) {
+    if (image.classList.contains('zoomed')) {
+        image.classList.remove('zoomed');
+    } else {
+        image.classList.add('zoomed');
+    }
+}
+//kotva
+function scrollToContent() {
+    var contentSection = document.getElementById('content-section');
+    contentSection.scrollIntoView({ behavior: 'smooth' });
+  }
+    </script>
+</head>
+<body>
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="index.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+<div class="content" id="content-section">
+    <div class="text_catalog"><span>Промоции</span></h1></div>
+    <!--Catalog-->
+    <div class="best_sellesrs_container">
+        <div class="image-catalog">
+        <div class="best_sellers"><p align="center"><img id="img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" onclick="toggleZoom(this)" src="Изображения за първа страница/37.png" width="90%" height="90%" ></p><b>Зарина</b><br>A1035<br>Афродита <br>Стара цена:<s>1400лв</s><br>Нова цена:1200лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" onclick="toggleZoom(this)" src="Изображения за първа страница/38.jpg" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Хестия<br>Стара цена:<s>1200лв</s><br>Нова цена:1000лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" onclick="toggleZoom(this)" src="Изображения за първа страница/39.png" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Ирида<br>Стара цена:<s>1000лв</s><br>Нова цена:800лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img4" onmouseover="setNewImage4()" onmouseout="setOldImage4()" onclick="toggleZoom(this)" src="Изображения за първа страница/40.png" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Артемида <br>Стара цена:<s>1100лв</s><br><br>Нова цена:900лв<p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img5" onmouseover="setNewImage5()" onmouseout="setOldImage5()" onclick="toggleZoom(this)" src="Изображения за първа страница/41.png" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Немезида <br>Стара цена:<s>1300лв</s><br>Нова цена:1100лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img6" onmouseover="setNewImage6()" onmouseout="setOldImage6()" onclick="toggleZoom(this)" src="Изображения за първа страница/42.jpg" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Персефона<br>Стара цена:<s>1400лв</s><br>Нова цена:1200лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img7" onmouseover="setNewImage7()" onmouseout="setOldImage7()" onclick="toggleZoom(this)" src="Изображения за първа страница/43.jpg" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Атена<br>Стара цена:<s>1500лв</s><br>Нова цена:1300лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img8" onmouseover="setNewImage8()" onmouseout="setOldImage8()" onclick="toggleZoom(this)" src="Изображения за първа страница/44.png" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Деметра <br>Стара цена:<s>1100лв</s><br>Нова цена:900лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+        <div class="best_sellers"><p align="center"><img id="img9" onmouseover="setNewImage9()" onmouseout="setOldImage9()" onclick="toggleZoom(this)" src="Изображения за първа страница/45.png" width="90%" height="90%"></p><b>Зарина</b><br>A1035<br>Хера<br>Стара цена:<s>1300лв</s><br>Нова цена:1100лв<br><p align="center"><a href="Формуляр за поръчка.html"><button class="cool-btn-white">Купи</button></a></p></div>
+    </div>
+    
+    </div>
+       <!--end of catalaog-->
+       <!--footer-->
+       <div class="footer" >
+        <div class="contact-info">
+            <p>Свържете се с нас:</p>
+            <p>Имейл: zarina@abv.bg</p>
+            <p>Телефон: +3593456789</p>
+        </div>
+      
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="links">
+            <a href="За нас.html">За нас</a>
+            <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+            <a href="Галерия.html">Галерия</a>
+        </div>
+        <button class="scroll-btn" onclick="scrollToContent()">Начало</button>
+      </div>
+      </div>
+      <!--end of footer-->
+</div>

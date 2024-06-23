@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Css_Първа страница.css">
+<title>За нас</title>
+<script>
+ //Image change for best sellers
+function setNewImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/1.2.png";
+
+}
+function setOldImage1()
+{
+document.getElementById("img1").src="Изображения за първа страница/1.png";
+}
+function setNewImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/2.2.png";
+}
+function setOldImage2()
+{
+document.getElementById("img2").src="Изображения за първа страница/2.png";
+}
+function setNewImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/3.2.png";
+}
+function setOldImage3()
+{
+document.getElementById("img3").src="Изображения за първа страница/3.png";
+}
+function setNewImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/4.2.jpg";
+}
+function setOldImage4()
+{
+document.getElementById("img4").src="Изображения за първа страница/4.png";
+}
+function setNewImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/5.2.png";
+}
+function setOldImage5()
+{
+document.getElementById("img5").src="Изображения за първа страница/5.png";
+}
+//change text for infomation about  
+function showNext() {
+    document.getElementById('div1').classList.add('hidden');
+    document.getElementById('div2').classList.remove('hidden');
+    document.querySelector('.left-arrow').classList.remove('hidden');
+    document.querySelector('.right-arrow').classList.add('hidden');
+  }
+
+  function showPrevious() {
+    document.getElementById('div1').classList.remove('hidden');
+    document.getElementById('div2').classList.add('hidden');
+    document.querySelector('.left-arrow').classList.add('hidden');
+    document.querySelector('.right-arrow').classList.remove('hidden');
+  }
+  function showNext_() {
+    document.getElementById('div1.2').classList.add('hidden_');
+    document.getElementById('div2.2').classList.remove('hidden_');
+    document.querySelector('.left-arrow_').classList.remove('hidden_');
+    document.querySelector('.right-arrow_').classList.add('hidden_');
+  }
+
+  function showPrevious_() {
+    document.getElementById('div1.2').classList.remove('hidden_');
+    document.getElementById('div2.2').classList.add('hidden_');
+    document.querySelector('.left-arrow_').classList.add('hidden_');
+    document.querySelector('.right-arrow_').classList.remove('hidden_');
+  }
+
+  function showNext__() {
+    document.getElementById('div1.3').classList.add('hidden__');
+    document.getElementById('div2.3').classList.remove('hidden__');
+    document.querySelector('.left-arrow__').classList.remove('hidden__');
+    document.querySelector('.right-arrow__').classList.add('hidden__');
+  }
+
+  function showPrevious__() {
+    document.getElementById('div1.3').classList.remove('hidden__');
+    document.getElementById('div2.3').classList.add('hidden__');
+    document.querySelector('.left-arrow__').classList.add('hidden__');
+    document.querySelector('.right-arrow__').classList.remove('hidden__');
+  }
+  //kotva
+  function scrollToContent() {
+    var contentSection = document.getElementById('content-section');
+    contentSection.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+</head>
+<body>
+<!--hover-->
+<div class="header">
+  <div class="logo"><img src="Изображения за първа страница/logo2.0.png" alt="Logo" width="100%" height="auto"></div>
+  <ul class="nav">
+    
+    <li><a href="За нас.html">За нас</a></li>
+    <li><a href="За фирмата.html">За фирмата</a></li>
+    <li>
+      <a href="Каталог.html">Каталог</a>
+      <div class="dropdown">
+        <ul>
+          <li><a href="Бални рокли.html">Бални рокли</a></li>
+          <li><a href="Вечерни рокли.html">Вечерни Рокли</a></li>
+          <li><a href="Сватбени рокли.html">Сватбени рокли</a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a href="Промоции.html">Промоция</a></li>
+    <li><a href="Галерия.html">Галерия</a></li>
+    <li><a href="Контакти.html">Контакти</a></li>
+ 
+    <li><a href="Формуляр за поръчка.html">Формуляр за регистрация</a></li>
+  </ul>
+</div>
+<!--end of hover-->
+<!--background image-->
+<div class="content"id="content-section">
+<div class="background_image_container"><img src="Изображения за първа страница/background_image_proba.png" width="100%" class="img_bg">
+<div class="text_background_image" >
+  <p align="center" class="normal_text">Артистични рокли за романтиците</p>
+  <p align="center" class="main_text">Рокли като никои други</p>
+</div>
+</div>
+<!--end of background image-->
+<!--best sellers-->
+<div class="real_content_container">
+<div class="best_sellesrs_container_the_most_loved_styles"><h3>НАЙ–ПРОДАВАНИ <span>Най-обичани стилове</span></h3></div>
+<div class="best_sellesrs_container">  
+  <div class="best_sellers"><p align="center"><img  id="img1" onmouseover="setNewImage1()" onmouseout="setOldImage1()" src="Изображения за първа страница/1.png" width="90%" height="90%"></p><b>Зарина</b><br>Селена Великолепие<br>A4767</div> 
+  <div class="best_sellers"><p align="center"><img id="img2" onmouseover="setNewImage2()" onmouseout="setOldImage2()" src="Изображения за първа страница/2.png" width="90%" height="90%"></p><b>Зарина</b><br>Рея Сияние<br>A8892</div>
+  <div class="best_sellers"><p align="center"><img id="img3" onmouseover="setNewImage3()" onmouseout="setOldImage3()" src="Изображения за първа страница/3.png" width="90%" height="90%"></p><b>Зарина</b><br>Еос Зора<br>A6035</div>
+  <div class="best_sellers"><p align="center"><img id="img4" onmouseover="setNewImage4()" onmouseout="setOldImage4()" src="Изображения за първа страница/4.png" width="90%" height="90%"></p><b>Зарина</b><br>Ирис Дъга<br>A8035</div>
+  <div class="best_sellers"><p align="center"><img id="img5" onmouseover="setNewImage5()" onmouseout="setOldImage5()" src="Изображения за първа страница/5.png" width="90%" height="90%"></p><b>Зарина</b><br>Ника Победа<br>A2767</div>
+</div>
+<!--end of best sellers-->
+<!--brands-->
+<div class="brands">Може да се видят и в<br>
+    <br>
+<img src="Изображения за първа страница/brands.png" width="90%">
+</div>
+<!--end of brands-->
+<!--information about....-->
+<div class="position_grid">
+<div class="right_one"><div class="_container">
+    <div id="div1" class="_content info1"><h3 class="text"><p class="zarina">Зарина</p><p>Добре дошли в света на елегантните рокли с Зарина! Ние сме вашата платформа за стил и изисканост, където всеки специален момент е предизвикателство за вдъхновение и елегантност. Със завършеност и изтънченост в дизайна, предлагаме уникална колекция от рокли, които са вдъхновени от модерните тенденции и класическата елегантност.
+
+      Независимо дали търсите перфектната рокля за сватбената церемония, вечерното парти или специално събитие, ние предлагаме разнообразие от стилове, цветове и размери, които да отразят вашия уникален стил и персоналност.</p></h3></div>
+    <div id="div2" class="_content info2 hidden"><h3 class="text"><p class="zarina">Зарина</p><p>Нашият асортимент включва изключителни модели, изработени с внимание към детайлите и качествени материали, които гарантират изисканост и комфорт през целия ден или вечер.
+
+     Позволете ни да ви помогнем да изберете роклята, която ще ви прави да се чувствате като звезда на всяко събитие. Вдъхновете се от нашата колекция сега и открийте елегантността и стила, които заслужавате. Доверете се на Зарина - вашето място за неповторима мода и изключително удоволствие от пазаруването.</p></h3>
+      </div>
+      
+    <button class="arrow left-arrow hidden" onclick="showPrevious()">&lt;</button>
+    <button class="arrow right-arrow" onclick="showNext()">&gt;</button>
+  </div></div><div class="left_one"><img src="Изображения за първа страница/left_one.png" width="100%" height="100%"  ></div>
+<div class="right_one"><img src="Изображения за първа страница/right_one.png" width="100%" height="100%" ></div><div class="left_one">
+    <div class="_container">
+        <div id="div1.2" class="_content info1"><h3 class="text"><p class="zarina">Зарина</p><p>При нас не само ще намерите рокли, които съответстват на вашите очаквания за качество и стил, но и ще срещнете екип от професионалисти, готови да ви помогнат с всяко въпросително и изискване. Нашата мисия е да създадем незабравимо преживяване за всеки клиент, като предоставим индивидуално внимание и персонализиран подход към всяка поръчка.
+
+          За нас важно е не само да ви предложим стилове и модели, които ви впечатляват, но и да ви осигурим безупречно обслужване и удовлетворение от началото до края на вашето пазаруване.</p></h3> 
+        </div>
+        <div id="div2.2" class="_content info2 hidden_"><h3 class="text"><p class="zarina">Зарина</p><p>Всяка рокля от Зарина е повод за радост и самочувствие, а нашата цел е да направим вашия избор на рокля единствено приятно и незабравимо преживяване.
+          Следете нашите социални мрежи и блог, за да бъдете в течение на последните модни тенденции, съвети за стил и специални оферти. Вижте за себе си защо Зарина е вашият най-добър избор за елегантни рокли и влезте в света на модата и стила с нас!</p></h3>
+        </div>
+        <button class="arrow left-arrow_ hidden_" onclick="showPrevious_()">&lt;</button>
+        <button class="arrow right-arrow_" onclick="showNext_()">&gt;</button>
+      </div>
+</div>
+<div class="right_one">
+    <div class="_container">
+        <div id="div1.3" class="_content info1"><h3 class="text"><p class="zarina">Зарина</p><p>Ние вярваме, че всяка жена заслужава да се чувства уверена и красива във всяка ситуация, затова сме се посветили на създаването на рокли, които подчертават индивидуалността и уникалността на всяка дама. С нашите рокли ще привлечете вниманието на околните и ще излъчвате неподправена елегантност и стил.
+          Всеки дизайн в нашата колекция е внимателно избран и разработен с мисъл за високо качество и удовлетворение на клиентите.</p> </h3></div>
+        <div id="div2.3" class="_content info2 hidden__"><h3 class="text"> <p class="zarina">Зарина</p><p> Работим с изключителни материали и внимателно изпълнение, за да създадем рокли, които не само изглеждат великолепно, но и се усещат така.
+         Нека Зарина бъде вашата дестинация за официални рокли, където всяка посещение е изживяване на стил, класа и красота. Благодарим ви, че избрахте да пазарувате с нас и се надяваме, че ще бъдем част от всеки ваши специален момент.</p></h3>
+          </div>
+        <button class="arrow left-arrow__ hidden__" onclick="showPrevious__()">&lt;</button>
+        <button class="arrow right-arrow__" onclick="showNext__()">&gt;</button>
+      </div>
+</div><div class="left_one"><img src="Изображения за първа страница/right_two.png" width="100%" height="100%"></div>
+<!--end of information-->
+<!--footer-->
+<div class="footer" >
+  <div class="contact-info">
+      <p>Свържете се с нас:</p>
+      <p>Имейл: zarina@abv.bg</p>
+      <p>Телефон: +3593456789</p>
+  </div>
+
+  <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+  <div class="links">
+      <a href="За нас.html">За нас</a>
+      <a href="Формуляр за поръчка.html">Формуляр за поръчка</a>
+      <a href="Галерия.html">Галерия</a>
+  </div>
+  <button class="scroll-btn" onclick="scrollToContent()">Начало</button>
+</div>
+</div>
+<!--end of footer-->
+</body>
+</html>
